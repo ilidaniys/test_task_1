@@ -23,7 +23,7 @@ const TableRow = ({date}) => {
       padding: 1rem 0;
     `;
     const StatusCell = styled.div`
-      ${props => props.status == true ? "color: green" : "color: red"}
+      ${props => props.status === true ? "color: green" : "color: red"}
     `;
     const queryClient = useQueryClient();
     const deleteUserMutation = useDeleteUser();
